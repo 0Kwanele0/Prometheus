@@ -1,7 +1,7 @@
 # A module to place elements randomly in the island
 import random
-from sys import exit
 from level2 import level
+from time import sleep
 
 # Defining initial variables
 xp = 50
@@ -41,14 +41,14 @@ def choices():
 print("\n-------WELCOME TO LEVE 1.----------")
 print("\nWelcome to the beautiful game,\nYou are dropped in an island"
       " and your role is to survive.\n")
-
+sleep(.3)
 # The game loop - level 1
 
 
 while fire > 0 or wolf > 0:
     print("\nXP:", xp)
     print("Your position:", hero_position)
-
+    sleep(.3)
     print("\nMake your a move:")
     choices()
 
